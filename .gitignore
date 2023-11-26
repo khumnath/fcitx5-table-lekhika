@@ -1,0 +1,9 @@
+*~
+build*/
+.*
+!.git*
+.git/
+tags
+astyle.sh
+cscope.*
+scripts*/

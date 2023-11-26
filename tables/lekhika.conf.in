@@ -1,0 +1,26 @@
+[InputMethod]
+Name=लेखिका- nepali input fcitx5 table
+Icon=fcitx5-lekhika
+Label=lekhika
+LangCode=ne
+Addon=table
+Configurable=True
+
+[Table]
+IconName=lekhika-ne
+File=table/lekhika.main.dict
+OrderPolicy=No
+AutoSelect=True
+AutoSelectLength=-1
+NoMatchAutoSelectLength=1
+Learning=False
+ExactMatch=False
+UseAlternativePageKey=True
+FirstCandidateAsPreedit=True
+CommitInvalidSegment=True
+
+[Table/PrevPage]
+0=Page_Up
+
+[Table/NextPage]
+0=Page_Down
