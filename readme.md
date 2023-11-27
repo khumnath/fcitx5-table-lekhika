@@ -6,8 +6,10 @@ Lekhika (https://khumnath.com.np/posts/2023-11-27-post3) table for fcitx
 
 ##How to install
 ==============
+```bash
 mkdir build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+```
 
 ### feature
 ==============
