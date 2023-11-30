@@ -8,12 +8,12 @@ consonant_transliteration = {
     "छ": ["chh", "Ch"],
     "ज": ["j"],
     "झ": ["jh", "J"],
-    "ञ": ["jn"],
+    "ञ": ["jn", "n"],
     "ट": ["T"],
     "ठ": ["Th"],
     "ड": ["D"],
     "ढ": ["Dh"],
-    "ण": ["N"],
+    "ण": ["N", "n"],
     "त": ["t"],
     "थ": ["th"],
     "द": ["d"],
@@ -37,7 +37,7 @@ consonant_transliteration = {
     "ज्ञ": ["jnj"]
 }
 
-vowel_transliteration = {
+vowel_sign_transliteration = {
     "ा": "aa",
     "ि": "i",
     "ी": "ee",
@@ -49,32 +49,79 @@ vowel_transliteration = {
     "ै": "ai",
     "ो": "o",
     "ौ": "au",
-    "ं": "M",
-    "ँ": "MM",
+    "ं": ["*", "M"],
+    "ँ": ["**", "M"],
     "ः": "H",
-    
+  "्" :"\\"
+}
+
+vowel_transliteration = {
+    "a": ["अ", "आ", "ए"],
+    "aa": "आ",
+    "A": ["आ", "ए"],
+    "i": ["इ", "ई", "ऐ"],
+    "ii": "ई",
+    "I": ["ई", "ऐ"],
+    "ee": "ई",
+    "u": ["उ", "ऊ", "यु"],
+    "uu": "ऊ",
+    "oo": "ऊ",
+    "U": "ऊ",
+    "Ri": "ऋ",
+    "Lri": "ऌ",
+    "lri": "ऌ",
+    "lree": "ॡ",
+    "e": ["ए", "इ"],
+    "E": ["ए", "इ"],
+    "ai": "ऐ",
+    "O": "ऒ",
+    "o": "ओ",
+    "au": "औ",
+           "~": "‌ञ्"
 }
 
 output = {}
 
-print("## Half Consonants")
-# Add the half form of each consonant to the output
-for k_key, k_values in consonant_transliteration.items():
-    for k_value in k_values:
-        output[k_value] = k_key + "्"
-        print(f"{k_value} {k_key}्")
+def handle_multi_value_transliteration(k_value, item):
+    for alt_value in item:
+        output[k_value + alt_value] = k_key + g_key
+        f.write(f"{k_value + alt_value} {k_key + g_key}\n")
 
-print("\n## Full Consonants")
-for k_key, k_values in consonant_transliteration.items():
-    for k_value in k_values:
-        # Print the full form of the consonant
-        print(f"{k_value + 'a'} {k_key}")
+with open('table.txt', 'w') as f:
+ # Write the contents of headers.txt into table.txt
+    with open('header.txt', 'r') as header:
+        for line in header:
+            f.write(line)
+    f.write("\n## Vowels\n")
 
-print("\n## Devanagari Tables")
-for k_key, k_values in consonant_transliteration.items():
-    for k_value in k_values:
-        for g_key, g_value in vowel_transliteration.items():
-            # Add the combination of the consonant and vowel sign to the output
-            if g_key != "":
-                output[k_value + g_value] = k_key + g_key
-                print(f"{k_value + g_value} {k_key + g_key}")
+    for v_key, v_values in vowel_transliteration.items():
+        for v_value in v_values:
+            f.write(f"{v_key} {v_value}\n")
+    f.write("\nam अं\naM अं\naH अः\naum ॐ\n")
+
+    f.write("\n## Half Consonants\n")
+
+    for k_key, k_values in consonant_transliteration.items():
+        for k_value in k_values:
+            output[k_value] = k_key + "्"
+            f.write(f"{k_value} {k_key}्\n")
+
+    f.write("\n## Full Consonants\n")
+
+    for k_key, k_values in consonant_transliteration.items():
+        for k_value in k_values:
+            if k_value + "a" not in output:
+                output[k_value + "a"] = k_key
+                f.write(f"{k_value + 'a'} {k_key}\n")
+
+    f.write("\n## Devanagari Tables\nRi ऋ\n")
+
+    for k_key, k_values in consonant_transliteration.items():
+        for k_value in k_values:
+            for g_key, g_value in vowel_sign_transliteration.items():
+                if g_key != "":
+                    if isinstance(g_value, list):
+                        handle_multi_value_transliteration(k_value, g_value)
+                    else:
+                        output[k_value + g_key] = k_key + g_key
+                        f.write(f"{k_value + g_value} {k_key + g_key}\n")
