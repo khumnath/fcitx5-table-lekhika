@@ -11,12 +11,13 @@ mkdir build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr
 ```
 
-### feature
+### Roadmap
 ==============
 
 - [x] basic nepali typing
-- [x] improved suggestion words
-- [ ] remove unneeded words
+- [x] create table maker script
+- [ ] make imstallable package
+- [ ] add word prediction
 - [ ] add more dictionary
 - [ ] and more to do as i experiment :smile:
 
