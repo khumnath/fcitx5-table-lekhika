@@ -14,17 +14,18 @@ cmake .. -DCMAKE_INSTALL_PREFIX=/usr
 ### Roadmap
 ==============
 
-- [x] basic nepali typing
-- [x] create table maker script
-- [ ] make imstallable package
-- [ ] add word prediction
-- [ ] add more dictionary
-- [ ] and more to do as i experiment :smile:
+- [x] basic nepali typing.
+- [x] create table maker script.
+- [ ] make installable package.
+- [ ] create html5 input with lekhika schemes.
+- [ ] add word prediction.
+- [ ] add more dictionary.
+- [ ] and more to do as i experiment.:smile:
 
 ### problems
 ==============
 
- some autocorrect words may disturb typing i am still improving.
+ main branch is now fully working. i am testing with words suggestion table. some autocorrect words are disturbing typing. i am working on it.
 
 ### contribution
 ==============
