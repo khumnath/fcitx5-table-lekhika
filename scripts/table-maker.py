@@ -8,19 +8,19 @@ consonant_transliteration = {
     "छ": ["chh", "Ch"],
     "ज": ["j"],
     "झ": ["jh", "J"],
-    "ञ": ["jn", "n"],
+    "ञ": ["jn"],
     "ट": ["T"],
     "ठ": ["Th"],
     "ड": ["D"],
     "ढ": ["Dh"],
-    "ण": ["N", "n"],
+    "ण": ["N"],
     "त": ["t"],
     "थ": ["th"],
     "द": ["d"],
     "ध": ["dh"],
     "न": ["n"],
     "प": ["p"],
-    "फ": ["ph", "P"],
+    "फ": ["ph", "f"],
     "ब": ["b"],
     "भ": ["bh", "B"],
     "म": ["m"],
@@ -39,6 +39,7 @@ consonant_transliteration = {
 
 vowel_sign_transliteration = {
     "ा": "aa",
+    "ा": "aa", 
     "ि": "i",
     "ी": "ee",
     "ु": "u",
@@ -49,10 +50,74 @@ vowel_sign_transliteration = {
     "ै": "ai",
     "ो": "o",
     "ौ": "au",
-    "ं": ["*", "M"],
-    "ँ": ["**", "M"],
-    "ः": "H",
-  "्" :"\\"
+    "ां": "aaM", # Anuswara with M 
+    "िं": "iM",
+    "ीं": "eeM",
+    "ुं": "uM",
+    "ूं": "ooM",
+    "ृं": "RiM",
+    "ॄं": "ReeM",
+    "ें": "eM",
+    "ैं": "aiM",
+    "ों": "oM",
+    "ौं": "auM",
+    "ां": "aa*", # anuswara with * sign
+    "िं": "i*",
+    "ीं": "ee*",
+    "ुं": "u*",
+    "ूं": "oo*",
+    "ृं": "Ri*",
+    "ॄं": "Ree*",
+    "ें": "e*",
+    "ैं": "ai*",
+    "ों": "o*",
+    "ौं": "au*",
+    "ाँ": "aaMM",    #chandrabindu with MM
+    "िँ": "iMM",
+    "ीँ": "eeMM",
+    "ुँ": "uMM",
+    "ूँ": "ooMM",
+    "ृँ": "RiMM",
+    "ॄँ": "ReeMM",
+    "ेँ": "eMM",
+    "ैँ": "aiMM",
+    "ोँ": "oMM",
+    "ौँ": "auMM",
+    "ाँ": "aa**", # chandrabindu with ** sign
+    "िँ": "i**",
+    "ीँ": "ee**",
+    "ुँ": "u**",
+    "ूँ": "oo**",
+    "ृँ": "Ri**",
+    "ॄँ": "Ree**",
+    "ेँ": "e**",
+    "ैँ": "ai**",
+    "ोँ": "o**",
+    "ौँ": "au**",
+    "ाः": "aaH", # visarga with H 
+    "िः": "iH",
+    "ीः": "eeH",
+    "ुः": "uH",
+    "ूः": "ooH",
+    "ृः": "RiH",
+    "ॄः": "ReeH",
+    "ेः": "eH",
+    "ैः": "aiH",
+    "ोः": "oH",
+    "ौः": "auH",
+
+    "ाः": "aa:", # visarga with : sign
+    "िः": "i:",
+    "ीः": "ee:",
+    "ुः": "u:",
+    "ूः": "oo:",
+    "ृः": "Ri:",
+    "ॄः": "Ree:",
+    "ेः": "e:",
+    "ैः": "ai:",
+    "ोः": "o:",
+    "ौः": "au:",
+    "ः": "H"
 }
 
 vowel_transliteration = {
@@ -74,10 +139,88 @@ vowel_transliteration = {
     "e": ["ए", "इ"],
     "E": ["ए", "इ"],
     "ai": "ऐ",
-    "O": "ऒ",
     "o": "ओ",
     "au": "औ",
-           "~": "‌ञ्"
+    "aM": ["अं", "आं", "एं"], # anuswara with M
+    "aaM": "आं",
+    "AM": ["आं", "एं"],
+    "iM": ["इं", "ईं", "ऐं"],
+    "iiM": "ईं",
+    "IM": ["ईं", "ऐं"],
+    "eeM": "ईं",
+    "uM": ["उं", "ऊं", "युं"],
+    "uuM": "ऊं",
+    "ooM": "ऊं",
+    "UM": "ऊं",
+    "RiM": "ऋं",
+    "LriM": "ऌं",
+    "lriM": "ऌं",
+    "lreeM": "ॡं",
+    "eM": ["एं", "इं"], 
+    "EM": ["एं", "इं"],
+    "aiM": "ऐं",
+    "oM": "ओं",
+    "auM": "औं",
+    "a*": ["अं", "आं", "एं"], # anuswara with * sign
+    "aa*": "आं",
+    "A*": ["आं", "एं"],
+    "i*": ["इं", "ईं", "ऐं"],
+    "ii*": "ईं",
+    "I*": ["ईं", "ऐं"],
+    "ee*": "ईं",
+    "u*": ["उं", "ऊं", "युं"],
+    "uu*": "ऊं",
+    "oo*": "ऊं",
+    "U*": "ऊं",
+    "Ri*": "ऋं",
+    "Lri*": "ऌं",
+    "lri*": "ऌं",
+    "lree*": "ॡं",
+    "e*": ["एं", "इं"],
+    "E*": ["एं", "इं"],
+    "ai*": "ऐं",
+    "o*": "ओं",
+    "au*": "औं", 
+    "a**": ["अँ", "आँ", "एँ"], #  chandrabindu with ** sign
+    "aa**": "आँ",
+    "A**": ["आँ", "एँ"],
+    "i**": ["इँ", "ईँ", "ऐँ"],
+    "ii**": "ईँ",
+    "I**": ["ईँ", "ऐँ"],
+    "ee**": "ईँ",
+    "u**": ["उँ", "ऊँ", "युँ"],
+    "uu**": "ऊँ",
+    "oo**": "ऊँ",
+    "U**": "ऊँ",
+    "Ri**": "ऋँ",
+    "Lri**": "ऌँ",
+    "lri**": "ऌँ",
+    "lree**": "ॡँ",
+    "e**": ["एँ", "इँ"],
+    "E**": ["एँ", "इँ"],
+    "ai**": "ऐँ",
+    "o**": "ओँ",
+    "au**": "औँ",
+    "aMM": ["अँ", "आँ", "एँ"], #  chandrabindu with MM
+    "aaMM": "आँ",
+    "AMM": ["आँ", "एँ"],
+    "iMM": ["इँ", "ईँ", "ऐँ"],
+    "iiMM": "ईँ",
+    "IMM": ["ईँ", "ऐँ"],
+    "eeMM": "ईँ",
+    "uMM": ["उँ", "ऊँ", "युँ"],
+    "uuMM": "ऊँ",
+    "ooMM": "ऊँ",
+    "UMM": "ऊँ",
+    "RiMM": "ऋँ",
+    "LriMM": "ऌँ",
+    "lriMM": "ऌँ",
+    "lreeMM": "ॡँ",
+    "eMM": ["एँ", "इँ"], 
+    "EMM": ["एँ", "इँ"],
+    "aiMM": "ऐँ",
+    "oMM": "ओँ",
+    "auMM": "औँ"
 }
 
 output = {}
@@ -88,9 +231,12 @@ def handle_multi_value_transliteration(k_value, item):
         f.write(f"{k_value + alt_value} {k_key + g_key}\n")
 
 with open('table.txt', 'w') as f:
- # Write the contents of headers.txt into table.txt
+    # Write the contents of headers.txt into table.txt
     with open('header.txt', 'r') as header:
         for line in header:
+            f.write(line)
+    with open('symbols.txt', 'r') as symbol:
+        for line in symbol:
             f.write(line)
     f.write("\n## Vowels\n")
 
@@ -125,3 +271,5 @@ with open('table.txt', 'w') as f:
                     else:
                         output[k_value + g_key] = k_key + g_key
                         f.write(f"{k_value + g_value} {k_key + g_key}\n")
+            if k_value.endswith("a"):
+                f.write(f"{k_value}\\ {k_key}्\n")

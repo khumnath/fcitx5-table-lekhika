@@ -1,5 +1,5 @@
 Length=5
-KeyCode=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~_@^
+KeyCode=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ~_@^*\`
 Prompt=
 ConstructPhrase=
 ###ATTENTION: This table contains some letters which are not visible eg: ZERO WIDTH NON JOINER and ZERO WIDTH JOINER. Edit with care
