@@ -2,7 +2,7 @@ fcitx5-table-lekhika =>  nepali input method for fcitx
 
 ##Description
 
-Lekhika (https://khumnath.com.np/posts/2023-11-27-post3) table for fcitx
+Lekhika (https://khumnath.com.np/posts/2023-11-27-post3) table for fcitx.   
 testing on browser is available now at https://khumnath.com.np/lekhika.js/
 
 ##How to install
