@@ -1,0 +1,3 @@
+*.cmake linguist-detectable=true
+*.shell linguist-detectable=true
+*.python linguist-detectable=false
