@@ -1,11 +1,12 @@
-set(TABLE_NAME
-  lekhika
+set(TABLE_NAMES
+lekhika  
+lekhika-test
   )
 
 set(MB_FILE)
 set(CONF_FILE)
 
-foreach(table ${TABLE_NAME})
+foreach(table ${TABLE_NAMES})
   fcitx5_translate_desktop_file("${table}.conf.in" "${table}.conf")
   add_custom_command(OUTPUT "${table}.main.dict"
     DEPENDS "${table}.txt"
