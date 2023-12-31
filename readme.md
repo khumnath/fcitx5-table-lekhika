@@ -1,3 +1,4 @@
+![Screenshot_20240101031944](https://github.com/khumnath/fcitx5-table-lekhika/assets/50103558/3b0a49b2-5876-4d44-9571-be3f5aca4942)
 fcitx5-table-lekhika =>  nepali input method for fcitx
 
 ##Description
