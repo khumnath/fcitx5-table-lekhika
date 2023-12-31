@@ -1,7 +1,7 @@
 [InputMethod]
-Name=लेखिका- nepali input
+Name=लेखिका- nepali input fcitx5 table
 Icon=fcitx5-lekhika
-Label=लेखिका
+Label=lekhika
 LangCode=ne
 Addon=table
 Configurable=True
@@ -10,30 +10,30 @@ Configurable=True
 IconName=lekhika-ne
 File=table/lekhika.main.dict
 CommitAfterSelect=True
-CommitInvalidSegment=True
 CommitWhenDeactivate=True
 UseFullWidth=True
-FirstCandidateAsPreedit=True
+FirstCandidateAsPreedit=False
 PreeditCursorPositionAtBeginning=True
-NoSortInputLength=1
+NoSortInputLength=0
 OrderPolicy=No
-UseSystemLanguageModel=False
+UseSystemLanguageModel=True
 UseContextRelatedOrder=True
 AutoSelect=True
 AutoSelectLength=1
-UseAlternativePageKey=True
-NoMatchAutoSelectLength=1
+NoMatchAutoSelectLength=0
+AutoPhraseLength=-1
+AutoPhraseWithPhrase=False
+SaveAutoPhraseAfter=-1
 ExactMatch=False
 Hint=True
 DisplayCustomHint=True
 HintSeparator=" ~ "
 KeypadAsInput=False
-Learning=False
-CandidateLayoutHint=Vertical
-PreeditInApplication=True
+
+
 
 [Table/PrevPage]
 0=Page_Up
 
 [Table/NextPage]
-0=Page_Down
+0=Page_Down 

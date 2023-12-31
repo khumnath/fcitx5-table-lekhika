@@ -64,9 +64,9 @@ diacritic_transliteration = {
     "ै": "ai",
     "ो": "o",
     "ौ": "au",
-    "ं": "am",
-    "ँ": "an",
-    "ः": "ah",
+    "ं": "m",
+    "ँ": "n",
+    "ः": "h",
 }
 
 def transliterate_nepal(nepal_word):

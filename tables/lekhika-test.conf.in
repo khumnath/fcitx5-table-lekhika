@@ -1,7 +1,7 @@
 [InputMethod]
 Name=लेखिका- experimental
 Icon=fcitx5-lekhika-test
-Label=लेखिका
+Label=लेखिका परिक्षण
 LangCode=ne
 Addon=table
 Configurable=True

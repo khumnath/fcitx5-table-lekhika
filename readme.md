@@ -17,6 +17,11 @@ sudo make install
 if you want to just install
 download https://github.com/khumnath/fcitx5-table-lekhika/files/13526606/release.zip and run install.sh .
 
+##Font and theme
+
+for ui install laila font from https://github.com/itfoundry/laila/raw/master/build/Laila-Medium.otf
+install theme with theme-installer.sh
+
 ## Roadmap
 
 - [x] basic nepali typing.
